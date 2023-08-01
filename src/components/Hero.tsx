@@ -1,12 +1,9 @@
 import { motion } from "framer-motion";
-import Navbar from "./Navbar";
 
 const Hero = () => {
   return (
     <>
-      <Navbar />
-
-      <div className="relative ">
+      <div className=" ">
         <img
           src="/public/foto-maranatha.jpg"
           className="absolute justify-end object-cover w-full h-full mix-blend-overlay "

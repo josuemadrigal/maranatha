@@ -12,9 +12,12 @@
   "dependencies": {
     "@headlessui/react": "^1.7.16",
     "@heroicons/react": "^2.0.18",
+    "@mantine/core": "^6.0.17",
+    "@mantine/ds": "^6.0.17",
     "framer-motion": "^10.15.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.14.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
