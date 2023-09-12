@@ -1,13 +1,45 @@
 export const Conocenos = () => {
   return (
     <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div className="mx-auto mb-10 lg:max-w-xl sm:text-left">
+        <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-red-900 uppercase rounded-full bg-teal-accent-400">
+          Nuestra historia
+        </p>
+        <p className="inline-block px-3 py-px mb-4 text-2xl font-extrabold  text-red-900 uppercase rounded-full bg-teal-accent-400">
+          1ra Iglesia Bautista Misionera Haitiana, Maranatha Inc.
+        </p>
+        <p className="text-base text-gray-700 md:text-lg">
+          En el año 1919, un grupo de hombres y mujeres creyentes en Jesucristo,
+          deciden reunirse para alabar y exaltar el nombre de Dios en la
+          comunidad El 5 de Chavón, hoy en día llamado Guaymate, perteneciente
+          al municipio de La Romana en la parte Este de la Republica Dominicana.
+          Debido al crecimiento de la iglesia, algunos miembros se trasladaron
+          la ciudad de La Romana para reunirse como comunidad cristiana en el
+          año 1920, en la calle Dr. Teófilo Hernández 27. Esa comunidad
+          cristiana toma la decisión de buscar un pastor para dirigir la
+          iglesia. Manda a solicitar un pastor a la Convención Bautista de Haití
+          (CBH), ubicada en la parte Norte de Haití específicamente en Limbé. El
+          14 de Febrero del 1922 llega al país el misionero Francés Elie Mac y
+          el 22 de Febrero del mismo año queda establecida la Ira. Iglesia
+          Bautista Misionera Haitiana Maranatha, Inc. En la ciudad de La Romana,
+          Republica Dominicana. En el transcurrir de los años hemos tenidos
+          siete pastores y en la actualidad contamos con tres pastores que
+          dirigen nuestra comunidad de fe: Elden Pérez Cesar como pastor
+          titular, Savenit Polo y Samuel Adrien como pastores asociados, al
+          junto de un grupo de líderes que conforma el liderazgo. Contamos con
+          más de 15 iglesias distribuidos en los bateyes y en la ciudad, donde
+          predicamos la palabra de Dios y hacemos cumplir nuestro nombre como
+          iglesia misionera, yudando a nuestra comunidad. Nuestra iglesia está
+          fundamentada en la Palabra de Dios como su base y su norma de fe y
+          conducta.
+        </p>
+      </div>
       <div className="mx-auto mb-10 lg:max-w-xl sm:text-center">
         <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-red-900 uppercase rounded-full bg-teal-accent-400">
           Nuestros Pastores
         </p>
         <p className="text-base text-gray-700 md:text-lg">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium.
+          Estos son nuestros lideres principales de nuestra iglesia.
         </p>
       </div>
       <div className=" flex place-content-center  gap-10 mx-auto sm:grid-cols-2 lg:grid-cols-4 lg:max-w-screen-lg">

@@ -21,6 +21,7 @@ import {
 import { useDisclosure } from "@mantine/hooks";
 import {
   IconNotification,
+  IconFriends,
   IconCode,
   IconBook,
   IconChartPie3,
@@ -100,8 +101,23 @@ const useStyles = createStyles((theme) => ({
 
 const mockdata = [
   {
+    icon: IconFriends,
+    title: "Sociedad de Jovenes",
+    description: "This Pokémon’s cry is very loud and distracting",
+  },
+  {
     icon: IconCode,
-    title: "Nuestros Pastores",
+    title: "Sociedad de Jovenes",
+    description: "This Pokémon’s cry is very loud and distracting",
+  },
+  {
+    icon: IconCode,
+    title: "Sociedad de Jovenes",
+    description: "This Pokémon’s cry is very loud and distracting",
+  },
+  {
+    icon: IconCode,
+    title: "Sociedad de Jovenes",
     description: "This Pokémon’s cry is very loud and distracting",
   },
   {
@@ -141,7 +157,7 @@ export function Navbarr() {
     <UnstyledButton className={classes.subLink} key={item.title}>
       <Group noWrap align="flex-start">
         <ThemeIcon size={34} variant="default" radius="md">
-          <item.icon size={rem(22)} color={theme.fn.primaryColor()} />
+          <item.icon size={rem(22)} color="#b81d1d" />
         </ThemeIcon>
         <div>
           <Text size="sm" fw={500}>
@@ -168,7 +184,10 @@ export function Navbarr() {
             className={classes.hiddenMobile}
           >
             <a href="#" className={classes.link}>
-              Home
+              Inicio
+            </a>
+            <a href="/conocenos" className={classes.link}>
+              Nosotros
             </a>
             <HoverCard
               width={600}
@@ -178,24 +197,21 @@ export function Navbarr() {
               withinPortal
             >
               <HoverCard.Target>
-                <a href="/conocenos" className={classes.link}>
+                <a href="/#" className={classes.link}>
                   <Center inline>
                     <Box component="span" mr={5}>
-                      Conocenos
+                      Ministerios
                     </Box>
-                    <IconChevronDown
-                      size={16}
-                      color={theme.fn.primaryColor()}
-                    />
+                    <IconChevronDown size={16} color="#b81d1d" />
                   </Center>
                 </a>
               </HoverCard.Target>
 
               <HoverCard.Dropdown sx={{ overflow: "hidden" }}>
                 <Group position="apart" px="md">
-                  <Text fw={500}>Features</Text>
-                  <Anchor href="#" fz="xs">
-                    View all
+                  {/* <Text fw={500}>Features</Text> */}
+                  <Anchor href="#" fz="xs" color="#b81d1d">
+                    Ver todos
                   </Anchor>
                 </Group>
 
@@ -213,28 +229,25 @@ export function Navbarr() {
                   <Group position="apart">
                     <div>
                       <Text fw={500} fz="sm">
-                        Get started
+                        Ofrendas
                       </Text>
                       <Text size="xs" color="dimmed">
-                        Their food sources have decreased, and their numbers
+                        Aqui va un texto sobre las ofrendas.
                       </Text>
                     </div>
-                    <Button variant="default">Get started</Button>
+                    <Button variant="default">Ofrendar ahora</Button>
                   </Group>
                 </div>
               </HoverCard.Dropdown>
             </HoverCard>
+
             <a href="#" className={classes.link}>
-              Learn
-            </a>
-            <a href="#" className={classes.link}>
-              Academy
+              Horarios
             </a>
           </Group>
 
           <Group className={classes.hiddenMobile}>
-            <Button variant="default">Log in</Button>
-            <Button>Sign up</Button>
+            <Button variant="default">Contactos</Button>
           </Group>
 
           <Burger
@@ -250,7 +263,7 @@ export function Navbarr() {
         onClose={closeDrawer}
         size="100%"
         padding="md"
-        title="Navigation"
+        title="Menú principal"
         className={classes.hiddenDesktop}
         zIndex={1000000}
       >
@@ -261,22 +274,23 @@ export function Navbarr() {
           />
 
           <a href="#" className={classes.link}>
-            Home
+            Inicio
+          </a>
+          <a href="/conocenos" className={classes.link}>
+            Nosotros
           </a>
           <UnstyledButton className={classes.link} onClick={toggleLinks}>
             <Center inline>
               <Box component="span" mr={5}>
-                Conocenos
+                Ministerios
               </Box>
-              <IconChevronDown size={16} color={theme.fn.primaryColor()} />
+              <IconChevronDown size={16} color="#b81d1d" />
             </Center>
           </UnstyledButton>
           <Collapse in={linksOpened}>{links}</Collapse>
+
           <a href="#" className={classes.link}>
-            Learn
-          </a>
-          <a href="#" className={classes.link}>
-            Academy
+            Horarios
           </a>
 
           <Divider
@@ -285,8 +299,8 @@ export function Navbarr() {
           />
 
           <Group position="center" grow pb="xl" px="md">
-            <Button variant="default">Log in</Button>
-            <Button>Sign up</Button>
+            <Button variant="default">Contactos</Button>
+            {/* <Button>Sign up</Button> */}
           </Group>
         </ScrollArea>
       </Drawer>

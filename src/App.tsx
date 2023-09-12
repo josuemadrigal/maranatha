@@ -8,14 +8,16 @@ import { Footer } from "./components/Footer";
 function App() {
   return (
     <Router>
-      <div className="sticky top-0 inset-0 ">
-        <Navbarr />
-      </div>{" "}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/conocenos" element={<Conocenos />} />
-      </Routes>
-      <Footer />
+      <div>
+        <div className="fixed top-0 w-full z-10">
+          <Navbarr />
+        </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/conocenos" element={<Conocenos />} />
+        </Routes>
+        <Footer />
+      </div>
     </Router>
   );
 }
