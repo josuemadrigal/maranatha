@@ -1,16 +1,17 @@
+import { FeaturesHome } from "../components/FeaturesHome";
 import Hero from "../components/Hero";
+import Ministerio from "../components/Ministerio";
+
+import { WelcomeHome } from "../components/WelcomeHome";
 
 const Home = () => {
   return (
     <>
       <Hero />
-
-      <p>
-        sdsd <br /> sdsd <br /> sdsd <br /> sdsd <br /> sdsd <br /> sdsd <br />{" "}
-        sdsd <br /> sdsd <br /> sdsd <br /> sdsd <br /> sdsd <br /> sdsd <br />{" "}
-        sdsd <br /> sdsd <br /> sdsd <br /> sdsd <br /> sdsd <br /> sdsd <br />{" "}
-        sdsd <br /> sdsd <br /> sdsd <br /> sdsd <br /> sdsd <br /> sdsd <br />{" "}
-      </p>
+      <WelcomeHome />
+      <FeaturesHome />
+      <Ministerio />
+      {/* <CardsCarousel /> */}
     </>
   );
 };

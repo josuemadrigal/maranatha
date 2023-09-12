@@ -103,47 +103,47 @@ const mockdata = [
   {
     icon: IconFriends,
     title: "Sociedad de Jovenes",
-    description: "This Pokémon’s cry is very loud and distracting",
+    description: "Corta descripción",
   },
   {
     icon: IconCode,
-    title: "Sociedad de Jovenes",
-    description: "This Pokémon’s cry is very loud and distracting",
+    title: "Ministerio #2",
+    description: "Corta descripción",
   },
   {
     icon: IconCode,
-    title: "Sociedad de Jovenes",
-    description: "This Pokémon’s cry is very loud and distracting",
+    title: "Ministerio #3",
+    description: "Corta descripción",
   },
   {
     icon: IconCode,
-    title: "Sociedad de Jovenes",
-    description: "This Pokémon’s cry is very loud and distracting",
+    title: "Ministerio #4",
+    description: "Corta descripción",
   },
   {
     icon: IconCoin,
-    title: "Free for everyone",
-    description: "The fluid of Smeargle’s tail secretions changes",
+    title: "Ministerio #5",
+    description: "Corta descripción",
   },
   {
     icon: IconBook,
-    title: "Documentation",
-    description: "Yanma is capable of seeing 360 degrees without",
+    title: "Ministerio #6",
+    description: "Corta descripción",
   },
   {
     icon: IconFingerprint,
-    title: "Security",
-    description: "The shell’s rounded shape and the grooves on its.",
+    title: "Ministerio #7",
+    description: "Corta descripción",
   },
   {
     icon: IconChartPie3,
-    title: "Analytics",
-    description: "This Pokémon uses its flying ability to quickly chase",
+    title: "Ministerio #8",
+    description: "Corta descripción",
   },
   {
     icon: IconNotification,
-    title: "Notifications",
-    description: "Combusken battles with the intensely hot flames it spews",
+    title: "Ministerio #9",
+    description: "Corta descripción",
   },
 ];
 
@@ -175,7 +175,9 @@ export function Navbarr() {
     <Box pb={1} sx={{ position: "sticky" }}>
       <Header height={60} px="md">
         <Group position="apart" sx={{ height: "100%" }}>
-          <img className="w-32" src="/public/logo-maranatha.png" />
+          <a href="/">
+            <img className="w-32" src="/public/logo-maranatha.png" />
+          </a>
           {/* <MantineLogo size={30} /> */}
 
           <Group
@@ -183,11 +185,11 @@ export function Navbarr() {
             spacing={0}
             className={classes.hiddenMobile}
           >
-            <a href="#" className={classes.link}>
+            <a href="/" className={classes.link}>
               Inicio
             </a>
             <a href="/conocenos" className={classes.link}>
-              Nosotros
+              Conocenos
             </a>
             <HoverCard
               width={600}
@@ -247,7 +249,9 @@ export function Navbarr() {
           </Group>
 
           <Group className={classes.hiddenMobile}>
-            <Button variant="default">Contactos</Button>
+            <Button variant="default" component="a" href="/contactos">
+              Contactos
+            </Button>
           </Group>
 
           <Burger
@@ -273,11 +277,11 @@ export function Navbarr() {
             color={theme.colorScheme === "dark" ? "dark.5" : "gray.1"}
           />
 
-          <a href="#" className={classes.link}>
+          <a href="/" className={classes.link}>
             Inicio
           </a>
           <a href="/conocenos" className={classes.link}>
-            Nosotros
+            Conocenos
           </a>
           <UnstyledButton className={classes.link} onClick={toggleLinks}>
             <Center inline>
@@ -299,7 +303,9 @@ export function Navbarr() {
           />
 
           <Group position="center" grow pb="xl" px="md">
-            <Button variant="default">Contactos</Button>
+            <Button variant="default" component="a" href="/contactos">
+              Contactos
+            </Button>
             {/* <Button>Sign up</Button> */}
           </Group>
         </ScrollArea>

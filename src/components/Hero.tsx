@@ -4,30 +4,13 @@ const Hero = () => {
   return (
     <div className="relative object-cover h-full lg:h-screen ">
       <img
-        src="/public/foto-maranatha.jpg"
+        src="/iglesia3.jpeg"
         className="absolute justify-end object-cover w-full h-full "
         alt=""
       />
 
-      {/* <motion.div
-        className="bg-white  flex  opacity-70  aspect-[1155/678] absolute justify-center  lg:w-96 lg:h-96   mix-blend-overlay "
-        animate={{
-          scale: [0.5, 1, 2, 4, 2, 1, 0.5],
-          rotate: [10, 20, 180, 180, 20, 10, 0],
-          borderRadius: ["30%", "40%", "50%", "60", "50%", "40%", "30%"],
-        }}
-        transition={{
-          duration: 5,
-          ease: "anticipate",
-          times: [0.2, 0.8, 1, 0.8, 0.4],
-          repeat: Infinity,
-          repeatDelay: 0,
-        }}
-      >
-        {" "}
-      </motion.div> */}
-      <div className="relative  bg-opacity-80 w-screen h-screen md:pt-2 bg-gradient-to-tr from-[#480b0bcc] from-30% via-[#9d0c0c37] to-[#510c0c] ">
-        <div className="px-4  mx-auto sm:px-0 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
+      <div className="relative  bg-opacity-80 w-screen h-screen md:pt-2 bg-gradient-to-tr from-[#480b0bcc] from-30% via-[#9d0c0c37] via-70% to-[#510c0c] to-99% ">
+        <div className="px-10  mx-auto  sm:max-w-xl md:max-w-full lg:max-w-screen-xl sm:px-10 md:px-24 lg:px-20 ">
           <div className="flex flex-row  items-center h-screen justify-between w-full ">
             <div className="  lg:mb-0 lg:w-1/2 lg:pr-5">
               <div className="max-w-xl mb-6 ">
