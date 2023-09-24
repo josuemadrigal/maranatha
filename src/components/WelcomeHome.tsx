@@ -96,7 +96,7 @@ export function WelcomeHome() {
   //   ));
 
   return (
-    <Container size="lg" py="xl">
+    <Container size="md" py="xl" className="mt-10 mb-14">
       <Group position="center">
         <Badge variant="filled" size="lg" sx={{ backgroundColor: "#991b1b" }}>
           Bienvenidos

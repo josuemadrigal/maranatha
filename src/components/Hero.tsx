@@ -9,7 +9,7 @@ const Hero = () => {
         alt=""
       />
 
-      <div className="relative  bg-opacity-80 w-screen h-screen md:pt-2 bg-gradient-to-tr from-[#480b0bcc] from-30% via-[#9d0c0c37] via-70% to-[#510c0c] to-99% ">
+      <div className="relative  bg-opacity-80 w-screen h-screen md:pt-2 bg-gradient-to-tr from-[#480b0bde] from-20% via-[#9d0c0c17] via-% to-[#510c0c] to-95% ">
         <div className="px-10  mx-auto  sm:max-w-xl md:max-w-full lg:max-w-screen-xl sm:px-10 md:px-24 lg:px-20 ">
           <div className="flex flex-row  items-center h-screen justify-between w-full ">
             <div className="  lg:mb-0 lg:w-1/2 lg:pr-5">
@@ -32,8 +32,7 @@ const Hero = () => {
               </span>
             </h2> */}
                 <p className="text-white  md:text-base">
-                  "Juntos, iluminando el camino hacia la fe y el amor
-                  inquebrantable."
+                  “Que prediques la palabra”. {"   "}2 Timoteo 4:2
                 </p>
               </div>
               <div className="flex items-center space-x-3">

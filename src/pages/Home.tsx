@@ -1,4 +1,3 @@
-import { FeaturesHome } from "../components/FeaturesHome";
 import Hero from "../components/Hero";
 import Ministerio from "../components/Ministerio";
 
@@ -9,7 +8,7 @@ const Home = () => {
     <>
       <Hero />
       <WelcomeHome />
-      <FeaturesHome />
+      {/* <FeaturesHome /> */}
       <Ministerio />
       {/* <CardsCarousel /> */}
     </>
